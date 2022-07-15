@@ -1,83 +1,71 @@
-
 *{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
 }
-h1{
-    font-size: 60px;
-}
+
 #container{
     display: flex;
     flex-direction: column;
+    /* justify-content: center; */
     align-items: center;
-    justify-content: center;
-    width: 100vw;
     height: 100vh;
-    background-color: lightsteelblue;
-}
-#controlbar{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 300px;
-    height: 800px;
-    flex-shrink: 0;
-    flex-grow: 0;
-    padding: 10px;
-    padding-top: 100px;
-    justify-content: center;
-}
-#drawboard{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width = 900px;
-    height = 900px;
-    border: solid black 2px;
-    flex-grow: 0;
-    flex-shrink: 0;
-}
-#drawboardTitle{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex: 0 0 auto;
+    width: 100vw;
+    padding-top: 50px;
 }
 
-#mainContent{
+#calcBody{
+    width: 200px;
+    height: 320px;
+    background-color: lightgray;
+    border: solid rgb(40,40,40) 2px;
+    border-radius: 15px;
     display: flex;
-    width: 100vw;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .row{
     display: flex;
+    justify-content: space-evenly;
+}
+
+.button{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    background-color: rgb(120,120,120);
+    color: white;
+    margin: 5px;
+    border: solid black 1px;
+}
+
+#equalButton{
+    width: 65px;
+}
+
+#buttonBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
 }
 
-.tile{
-    background-color: white;
-    border: solid black 0.5px;
-    display: flex;
-    flex: 0 0 auto;
- 
-}
-
-
-.coloredTile{
+#screen{
+    width: 165px;
+    height: 50px;
     background-color: black;
-}
-
-.resetButton{
-    width: 190px;
-    margin-top: 100px;
-    font-size: 24px;
-    padding: 10px;
-    border-radius: 20px;
-    border: solid black;
-}
-
-.slider{
-    margin-top: 40px;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: rgb(17, 255, 0);
+    display: flex;
+    justify-content: end;
+    /* align-items: flex-end; */
+    padding: 8px;
+    border: solid rgb(40,40,40);
+    word-wrap: break-word;
+    flex: 0 0 auto;
+    white-space: pre-wrap;
 }
