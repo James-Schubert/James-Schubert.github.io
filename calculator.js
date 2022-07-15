@@ -175,7 +175,10 @@ const row5 = document.querySelector("#row5");
 const equalButton = row5.lastChild;
 equalButton.setAttribute("id","equalButton");
 
-
+let title = document.createElement('div');
+title.textContent = "Created by Jimmy Schubert";
+title.classList.add("title");
+container.appendChild(title);
 
 
 
